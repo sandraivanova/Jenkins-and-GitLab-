@@ -1,0 +1,15 @@
+name: GitHub Actions CI
+
+on:
+  push:
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List repository files
+        run: ls -l
